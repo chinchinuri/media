@@ -768,6 +768,13 @@
                 <div class="kpi-value">1,7 млн</div>
                 <div class="kpi-trend up">▲ +36% <span class="note">до Q4 2025</span></div>
             </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">👤</div>
+                <div class="kpi-platform">FB — О. Потій</div>
+                <div class="kpi-label">Перегляди</div>
+                <div class="kpi-value">42,4 тис.</div>
+                <div class="kpi-trend up">▲ +134,9% <span class="note">особиста сторінка</span></div>
+            </div>
             <div class="kpi-card featured">
                 <div class="kpi-icon">🌐</div>
                 <div class="kpi-platform">cip.gov.ua</div>
@@ -823,6 +830,13 @@
                 <div class="kpi-trend up">▲ +7,8% <span class="note">до Q4 2025</span></div>
             </div>
             <div class="kpi-card">
+                <div class="kpi-icon">👤</div>
+                <div class="kpi-platform">FB — О. Потій</div>
+                <div class="kpi-label">Взаємодії</div>
+                <div class="kpi-value">1 179</div>
+                <div class="kpi-trend up">▲ +30,7% <span class="note">особистий контент</span></div>
+            </div>
+            <div class="kpi-card">
                 <div class="kpi-icon">📸</div>
                 <div class="kpi-platform">Instagram</div>
                 <div class="kpi-label">Взаємодії</div>
@@ -835,13 +849,6 @@
                 <div class="kpi-label">Взаємодії</div>
                 <div class="kpi-value">2 300</div>
                 <div class="kpi-trend up">▲ +8% <span class="note">двомовний контент</span></div>
-            </div>
-            <div class="kpi-card">
-                <div class="kpi-icon">👤</div>
-                <div class="kpi-platform">FB — О. Потій</div>
-                <div class="kpi-label">Взаємодії</div>
-                <div class="kpi-value">1 179</div>
-                <div class="kpi-trend up">▲ +30,7% <span class="note">особистий контент</span></div>
             </div>
             <div class="kpi-card" style="opacity:0.6;">
                 <div class="kpi-icon">✉️</div>
@@ -868,6 +875,13 @@
                 <div class="kpi-label">Читачів</div>
                 <div class="kpi-value">70 тис.</div>
                 <div class="kpi-trend up">▲ +1 102 <span class="note">до Q4 2025</span></div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">👤</div>
+                <div class="kpi-platform">FB — О. Потій</div>
+                <div class="kpi-label">Читачів</div>
+                <div class="kpi-value">486</div>
+                <div class="kpi-trend up">▲ +78 осіб <span class="note">до Q4 2025</span></div>
             </div>
             <div class="kpi-card">
                 <div class="kpi-icon">✉️</div>
@@ -904,13 +918,6 @@
                 <div class="kpi-value">2 040</div>
                 <div class="kpi-trend up">▲ +300 <span class="note">до Q4 2025</span></div>
             </div>
-            <div class="kpi-card">
-                <div class="kpi-icon">📍</div>
-                <div class="kpi-platform">Регіони</div>
-                <div class="kpi-label">Публікацій у медіа</div>
-                <div class="kpi-value">50</div>
-                <div class="kpi-trend neutral">◆ 14 управлінь</div>
-            </div>
         </div>
 
         <!-- ─── CHARTS BLOCK ─── -->
@@ -924,9 +931,7 @@
                 <h3>Розмір аудиторії по каналах (тис. осіб)</h3>
                 <canvas id="audienceChart" height="160"></canvas>
                 <div class="insight">
-                    <strong>Facebook та Telegram</strong> — основні майданчики за кількістю підписників. Попри малу
-                    аудиторію (12,8 тис.), <strong>X (Twitter) генерує великі охоплення</strong> серед іноземної
-                    аудиторії.
+                    <strong>Facebook та Telegram</strong> — основні майданчики за кількістю підписників.
                 </div>
             </div>
             <div class="card">
@@ -934,8 +939,22 @@
                 <canvas id="viewsChart" height="160"></canvas>
                 <div class="insight">
                     <strong>Вебсайт наблизився до Facebook</strong> за генерацією переглядів (28% vs 40%), що свідчить
-                    про попит на першоджерела — нормативні акти, накази та офіційні переліки.
+                    про попит на першоджерела — нормативні акти, накази та офіційні переліки, а також про активність
+                    аудиторії у соціальних мережах, яка переходить на сайт за опублікованими посиланнями.
                 </div>
+            </div>
+        </div>
+
+        <div class="card" style="margin-bottom: 28px;">
+            <h3>Динаміка руху аудиторії: Q1 2026 vs Q4 2025 (%)</h3>
+            <canvas id="audienceGrowthChart" height="90"></canvas>
+            <div class="insight" style="margin-top:14px;">
+                <strong>Сторінка О. Потія (+19,1%), LinkedIn (+17,2%) та Instagram (+8,8%)</strong> — лідери за
+                приростом аудиторії у відсотках.
+                <strong>Facebook</strong> додав 1&nbsp;102 читачі (+1,6%) та зберігає найбільшу спільноту
+                (70&nbsp;тис.).
+                <strong>Telegram</strong> втратив 2&nbsp;400 підписників — відображає загальноукраїнський тренд відтоку
+                від платформи.
             </div>
         </div>
 
@@ -943,9 +962,11 @@
             <h3>Динаміка переглядів: Q1 2026 vs Q4 2025 (%)</h3>
             <canvas id="growthChart" height="90"></canvas>
             <div class="insight" style="margin-top:14px;">
-                <strong>Вебсайт (+422%) та X (+385%)</strong> — беззаперечні лідери росту. Основний драйвер — публікація
-                переліку забороненого ПЗ та комунікація про кібератаки (UAC-0001/APT28). <strong>Сторінка Голови Служби
-                    (+134,9%)</strong> підтверджує: персоналізований контент перевершує інституційний.
+                <strong>Вебсайт (+422%)</strong> та <strong>Сторінка Голови Служби (+134,9%)</strong> — беззаперечні
+                лідери зростання переглядів.
+                Основний драйвер — публікація переліку забороненого ПЗ.
+                Персоналізований контент (особиста сторінка керівника) демонструє значно вищу ефективність порівняно з
+                інституційними каналами.
             </div>
         </div>
 
@@ -1096,12 +1117,6 @@
                         <div class="stat-change up">▲ +24,3% до Q4</div>
                     </div>
                 </div>
-                <div class="anomaly">
-                    <div class="anomaly-title">⚡ Парадокс Instagram</div>
-                    <p>Перегляди впали на <strong style="color:#fbbf24">50%</strong>, але взаємодії зросли на <strong
-                            style="color:#34d399">24,3%</strong>. Аудиторія скоротилась через зміну алгоритмів, але
-                        стала значно лояльнішою та залученою — особливо до емоційного контенту.</p>
-                </div>
                 <div class="top-post" style="margin-top:12px;">
                     <div class="top-post-num">#1</div>
                     <div class="top-post-text">Перелік забороненого ПЗ</div>
@@ -1170,6 +1185,11 @@
                     <div class="top-post-stats"><span class="views-badge">17,2 тис.</span><span
                             class="engage-badge">240</span></div>
                 </div>
+                <div class="top-post">
+                    <div class="top-post-num">#3</div>
+                    <div class="top-post-text">Держспецзв'язку оприлюднила перелік забороненого ПЗ</div>
+                    <div class="top-post-stats"><span class="views-badge">16,3 тис.</span></div>
+                </div>
                 <div class="warning-box" style="margin-top:12px;">
                     <strong>Тренд:</strong> Відтік 2 400 підписників відображає загальнонац. падіння довіри до Telegram
                     («рос. слід»). Пости про кібератаки досі дають вірусне охоплення.
@@ -1227,8 +1247,7 @@
                             class="engage-badge">315</span></div>
                 </div>
                 <div class="success-box" style="margin-top:12px;">
-                    <strong>Прорив:</strong> Пост про кібератаку UAC-0001/APT28 — найбільше вірусне охоплення серед УСІХ
-                    соцмереж у кварталі.
+                    <strong>🔥 </strong> Зростання кількості переглядів за рахунок окремих постів.
                 </div>
             </div>
 
@@ -1296,7 +1315,7 @@
                     <div class="platform-logo" style="background: #ff000022;">▶️</div>
                     <div>
                         <div class="platform-name">YouTube</div>
-                        <div class="platform-desc">Рекордне зростання публікацій · навчальний та роз'яснювальний контент
+                        <div class="platform-desc">Зростання публікацій · навчальний та роз'яснювальний контент
                         </div>
                     </div>
                 </div>
@@ -1329,8 +1348,9 @@
                     <div class="top-post-stats"><span class="views-badge">1,1 тис.</span></div>
                 </div>
                 <div class="success-box" style="margin-top:12px;">
-                    <strong>Ривок:</strong> +400% публікацій порівняно з Q1 2025 та +51% тривалості перегляду —
-                    аудиторія активно споживає довгоформатний контент.
+                    <strong>🔥</strong> +400% публікацій порівняно з Q1 2025 та +51% тривалості перегляду —
+                    аудиторія активно споживає довгоформатний контент. Надалі потрібно збільшувати кількість відео,
+                    що буде сприяти росту аудиторії.
                 </div>
             </div>
 
@@ -1400,10 +1420,67 @@
             </div>
         </div>
 
+        <div class="card" style="margin-bottom: 28px;">
+            <div class="platform-header">
+                <div class="platform-logo" style="background: #38a16922;">📰</div>
+                <div>
+                    <div class="platform-name">Публікаційна активність (Новини cip.gov.ua)</div>
+                    <div class="platform-desc">Аналіз опублікованих новин та їх поширення у медіа</div>
+                </div>
+            </div>
+            <div class="stat-row">
+                <div class="stat-item">
+                    <div class="stat-val">167</div>
+                    <div class="stat-label">Усього новин</div>
+                    <div class="stat-change up">108 UA / 56 EN</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-val">36,7 тис.</div>
+                    <div class="stat-label">Переглядів новин</div>
+                    <div class="stat-change up">▲ активний інтерес</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-val">26 тис.</div>
+                    <div class="stat-label">Унікальних читачів</div>
+                    <div class="stat-change neutral">новинної стрічки</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-val">298</div>
+                    <div class="stat-label">Згадок у медіа</div>
+                    <div class="stat-change up">▲ висока цитованість</div>
+                </div>
+            </div>
+            <table class="data-table" style="margin-top:12px;">
+                <tr>
+                    <th>Топ-3 новини за переглядами</th>
+                    <th>Перегляди</th>
+                    <th>Згадки в медіа</th>
+                </tr>
+                <tr>
+                    <td>Оприлюднення переліку забороненого ПЗ та обладнання</td>
+                    <td class="hl">8 614</td>
+                    <td class="hl">14</td>
+                </tr>
+                <tr>
+                    <td>Вимоги до захисту інформації для постачальників держсектору</td>
+                    <td class="hl">2 068</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Затверджено каталог заходів та мет. рекомендації з кіберзахисту</td>
+                    <td class="hl">2 018</td>
+                    <td>1</td>
+                </tr>
+            </table>
+            <div class="insight" style="margin-top:14px;">
+                <strong>Синдикація контенту:</strong> Новинна стрічка вебсайту ефективно індексується та републікується національними та галузевими медіа (майже 300 прямих згадок та передруків публікацій за квартал).
+            </div>
+        </div>
+
         <!-- ─── CROSS-PLATFORM TOP ─── -->
         <div class="section-divider">
             <div class="section-title">Крос-платформна аналітика</div>
-            <div class="section-heading">Найуспішніші матеріали всіх каналів</div>
+            <div class="section-heading">Найуспішніший матеріал з кожного каналу</div>
         </div>
 
         <div class="card" style="margin-bottom: 28px;">
@@ -1418,7 +1495,7 @@
                     <th>Тип контенту</th>
                 </tr>
                 <tr>
-                    <td class="hl">🥇 1</td>
+                    <td class="hl">1</td>
                     <td>Facebook</td>
                     <td>Перелік забороненого ПЗ та обладнання</td>
                     <td class="hl up">161 600</td>
@@ -1426,7 +1503,7 @@
                     <td><span class="badge" style="font-size:0.7em; padding:2px 8px;">Регуляторний</span></td>
                 </tr>
                 <tr>
-                    <td class="hl">🥈 2</td>
+                    <td class="hl">2</td>
                     <td>X (Twitter)</td>
                     <td>Атака APT28 / UAC-0001 · CVE-2026-21509</td>
                     <td class="hl up">46 000</td>
@@ -1434,7 +1511,7 @@
                     <td><span class="badge amber" style="font-size:0.7em; padding:2px 8px;">Кіберзагроза</span></td>
                 </tr>
                 <tr>
-                    <td class="hl">🥉 3</td>
+                    <td class="hl">3</td>
                     <td>Вебсайт</td>
                     <td>Перелік забороненого ПЗ (сторінка)</td>
                     <td class="hl up">76 000</td>
@@ -1459,25 +1536,26 @@
                 </tr>
                 <tr>
                     <td>6</td>
-                    <td>X (Twitter)</td>
-                    <td>Виступ О. Потія на KICRF 2026</td>
-                    <td class="up">16 000</td>
-                    <td>41</td>
-                    <td><span class="badge amber" style="font-size:0.7em; padding:2px 8px;">Заходи</span></td>
-                </tr>
-                <tr>
-                    <td>7</td>
                     <td>FB (О. Потій)</td>
                     <td>Форум #KICRF2026, зустріч з Ш. Сюрен</td>
                     <td class="up">11 400</td>
                     <td>64</td>
                     <td><span class="badge green" style="font-size:0.7em; padding:2px 8px;">Персональний</span></td>
                 </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Linkedin</td>
+                    <td>Кібератака від імені CERT-UA</td>
+                    <td class="up">2 300</td>
+                    <td>71</td>
+                    <td><span class="badge amber" style="font-size:0.7em; padding:2px 8px;">Заходи</span></td>
+                </tr>
             </table>
             <div class="insight" style="margin-top:18px;">
                 <strong>Ключовий інсайт:</strong> Матеріал «Перелік забороненого ПЗ» став <strong>найбільш ефективним
                     форматом кварталу</strong> — він стрельнув одночасно на Facebook (161 тис.), вебсайті (76 тис.) та
-                Instagram (16,7 тис.). Комунікації про кібератаки — другий за силою драйвер охоплень.
+                Instagram (16,7 тис.). Також серед топ-тем: ухвалення інших нормативно-правових актів, повідомлення про
+                кібератаки, рекомендації щодо захисту, привітання.
             </div>
         </div>
 
@@ -1485,6 +1563,29 @@
         <div class="section-divider">
             <div class="section-title">Регіональний вимір</div>
             <div class="section-heading">Активність 14 територіальних управлінь</div>
+        </div>
+
+        <!-- KPI регіони -->
+        <div class="grid-2" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 20px;">
+            <div class="card">
+                <div class="kpi-icon">📍</div>
+                <div class="kpi-platform">Соцмережі Держспецзв'язку</div>
+                <div class="kpi-label">Публікацій у соцмережах Служби про роботу територіальних органів, підрозділів
+                </div>
+                <div class="kpi-value">20</div>
+                <div class="kpi-trend neutral">◆ зокрема Управлінь в Закарпатській, Житомирській, Рівненській областях
+                    тощо</div>
+            </div>
+            <div class="card">
+                <div class="kpi-icon">📍</div>
+                <div class="kpi-platform">Регіони</div>
+                <div class="kpi-label">Публікацій у медіа від управлінь</div>
+                <div class="kpi-value">50</div>
+                <div class="kpi-trend neutral">◆ 14 управлінь</div>
+            </div>
+        </div>
+        <div class="grid-2" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 20px;">
+
         </div>
 
         <div class="grid-2-1" style="margin-bottom: 28px;">
@@ -1607,12 +1708,42 @@
             }
         });
 
-        // 3. Динаміка переглядів
-        const growthData = [422, 385, 134.9, 36, 23, 4.3, -5, -50];
+        // 3a. Динаміка руху аудиторії
+        // Зміни у відсотках: FB +1102 від 68898→70000 = +1.6%, TG -2400 від 65000→62600 = -3.7%, X стабільно≈0, Instagram +616 від 7006→7622 = +8.8%, YouTube +135 від 3025→3160 = +4.5%, LinkedIn +300 від 1740→2040 = +17.2%, FB Потій +78 від 408→486 = +19.1%
+        const audienceGrowthData = [19.1, 17.2, 8.8, 4.5, 1.6, 0, -3.7];
+        new Chart(document.getElementById('audienceGrowthChart'), {
+            type: 'bar',
+            data: {
+                labels: ['FB (О.Потій)', 'LinkedIn', 'Instagram', 'YouTube', 'Facebook', 'X (Twitter)', 'Telegram'],
+                datasets: [{
+                    data: audienceGrowthData,
+                    backgroundColor: audienceGrowthData.map(v => v > 0 ? '#10b981cc' : '#ef4444cc'),
+                    borderRadius: 6,
+                    borderSkipped: false,
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { callbacks: { label: c => ` Динаміка: ${c.raw}%` } }
+                },
+                scales: {
+                    y: {
+                        grid: { color: 'rgba(255,255,255,0.05)' },
+                        ticks: { color: '#94a3b8', callback: v => v + '%' }
+                    },
+                    x: { grid: { display: false }, ticks: { color: '#94a3b8' } }
+                }
+            }
+        });
+
+        // 3b. Динаміка переглядів
+        const growthData = [422, 134.9, 36, 23, 4.3, -5, -50];
         new Chart(document.getElementById('growthChart'), {
             type: 'bar',
             data: {
-                labels: ['Вебсайт', 'X (Twitter)', 'FB (О.Потій)', 'Facebook', 'YouTube', 'LinkedIn', 'Telegram', 'Instagram'],
+                labels: ['Вебсайт', 'FB (О.Потій)', 'Facebook', 'YouTube', 'LinkedIn', 'Telegram', 'Instagram'],
                 datasets: [{
                     data: growthData,
                     backgroundColor: growthData.map(v => v > 0 ? '#10b981cc' : '#ef4444cc'),
